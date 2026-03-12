@@ -1,0 +1,38 @@
+/* Toast.css */
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 300px; /* Ajuste a largura conforme necessário */
+    transition: opacity 0.3s ease;
+    color: black;
+}
+
+.toast.success {
+    border-left: 5px solid green; /* Verde para sucesso */
+}
+
+.toast.error {
+    border-left: 5px solid red; /* Vermelho para erros */
+}
+
+.toast.warning {
+    border-left: 5px solid orange; /* Laranja para avisos */
+}
+
+.toast-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #2c92e0; /* Cor do botão */
+    font-weight: bold;
+}

@@ -1,0 +1,217 @@
+.subject-container {
+    display: flex;
+    flex-direction: column; /* Organiza o label e o input de forma vertical */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do container */
+}
+
+.tituloContainerFiltros {
+    font-size: 16px;
+    width: 100%;
+    color: black;
+}
+
+
+.subject-input::placeholder {
+    color: #7f8c8d;  /* Cor do texto do placeholder */
+    opacity: 1; /* Assegura que o placeholder não fique muito transparente */
+  }
+
+.subject-input {
+    width: 100.1%;
+    padding: 12px; /* Espaço interno */
+    font-size: 16px; /* Texto maior */
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    height: 50%; /* Altura aumentada */
+    box-sizing: border-box; /* Garante que padding não estoure a altura */
+  }
+
+/* Estilo para o container geral */
+.send-email-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0; /* Remove o padding para evitar overflow */
+}
+
+.send-email-content {
+    background-color: #1a1e25;
+    border-radius: 16px;
+    padding: 30px;
+    width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.send-email-content h1 {
+    color: white; /* Cor do título */
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.suggest-button {
+    background-color: #14a0ca;
+    color: rgb(248, 248, 248);
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Ocupa espaço igual ao botão enviar */
+    text-align: center;
+}
+
+.suggest-button:hover {
+    background-color: #4493b4;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Garante que os botões fiquem lado a lado */
+    width: 100%; /* Para ocupar toda a largura disponível */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+
+.back-button-send,
+.clear-filters-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button-send {
+    background-color: #2d3e50;
+}
+
+.back-button-send:hover {
+    background-color: #16a085;
+}
+
+.clear-filters-button {
+    background-color: #e74c3c; /* Cor de fundo do botão */
+}
+
+.clear-filters-button:hover {
+    background-color: #c0392b; /* Cor do botão ao passar o mouse */
+}
+
+.professions-container {
+    margin-bottom: 20px;
+    width: 100%;
+    color: black;
+    
+}
+
+.filters-container {
+    margin-top: 20px;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.service-filter {
+    background-color: #1abc9c;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: white; /* Cor do texto da tag */
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.remove-filter {
+    background: none;
+    border: none;
+    color: white; /* Cor do texto do botão de remoção */
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.remove-filter:hover {
+    color: red;
+}
+
+.tag-input {
+    width: 98.5%; /* Ajusta para a largura total */
+    padding: 10px;
+    border: 2px solid #bdc3c7; /* Cor da borda */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    background-color: #ecf0f1; /* Cor de fundo */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: border-color 0.3s ease; /* Transição suave para mudança de cor */
+    margin-bottom: 10px; /* Espaço abaixo do input */
+    color: #2c3e50; /* Cor do texto do input */
+}
+
+.tag-input:focus {
+    border-color: #3498db; /* Cor da borda ao focar */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+.message-container {
+    margin-top: 20px; /* Espaço acima do textarea */
+}
+
+.message-box {
+    width: 99%; /* Ajusta para a largura total */
+    height: 220px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+    color: #2c3e50; /* Cor do texto da textarea */
+    resize: none; /* Impede redimensionamento */
+}
+
+.message-box:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Estilo dos botões */
+.buttons-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.send-button {
+    background-color: #1abc9c;
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.send-button:hover {
+    background-color: #16a085;
+}
+
+.tituloContainerFiltros {
+    color: rgb(248, 243, 243);
+}

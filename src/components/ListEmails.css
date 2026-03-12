@@ -1,0 +1,130 @@
+.list-emails-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+}
+
+.content-wrapper {
+  position: relative;
+  background-color: #1a1e25;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: calc(100% - 220px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 80px;
+  transition: max-width 0.3s ease;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-group {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 250px;
+  box-sizing: border-box; /* Garante que padding e border não extrapolem o tamanho definido */
+  overflow: hidden; /* Evita que o conteúdo ultrapasse os limites */
+}
+
+.filter-group input[type="text"] {
+  width: 100%; /* Faz o input ocupar 100% do espaço disponível */
+  max-width: 100%; /* Garante que o input não ultrapasse a largura do container */
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #345062;
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-sizing: border-box; /* Garante que o padding seja incluído no tamanho total do input */
+}
+
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filter-group select,
+.filter-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #345062;
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-group select:focus,
+.filter-group input[type="text"]:focus {
+  outline: none;
+  background-color: #293a4b;
+  border-color: white;
+}
+
+.grid-section {
+  overflow-x: auto;
+}
+
+.grid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grid-table th,
+.grid-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: white;
+}
+
+.grid-table th {
+  background-color: #1a1e25;
+}
+
+.grid-table tr:hover {
+  background-color: #293a4b;
+}
+
+.back-button-list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #345062;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button-list:hover {
+  background-color: #293a4b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .content-wrapper {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
